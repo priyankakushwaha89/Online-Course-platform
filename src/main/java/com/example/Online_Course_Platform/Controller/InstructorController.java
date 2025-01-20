@@ -45,6 +45,11 @@ public class InstructorController {
     {
         return "Hello Developers! This is Online Course Platform";
     }
+    @RequestMapping("/test2")
+    public String test2()
+    {
+        return "Hello EveryOne!";
+    }
     @PostMapping("/save")
     public String createInstructorWithCoursesAndLessons(@Valid @RequestBody InstructorDTO instructorDTO) {
         Instructor instructor = new Instructor();
